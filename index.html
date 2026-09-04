@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jogos — Fluência Digital</title>
+<meta name="description" content="Três jogos de fluência digital: investigação de boatos, identificação de golpes e atitudes seguras na internet.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --roxo:#1b0057; --magenta:#c80053; --rosa:#e72b62;
+    --amarelo:#ffdc74; --laranja:#ff9967; --creme:#fffdf5;
+    --verde:#178a4b;
+    --sans:'Poppins',Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; font-family:var(--sans); background:var(--roxo); color:var(--creme);
+    min-height:100vh; display:flex; flex-direction:column;
+    background-image:
+      radial-gradient(circle at 12% 8%, rgba(255,153,103,.18), transparent 42%),
+      radial-gradient(circle at 88% 92%, rgba(200,0,83,.22), transparent 45%);
+  }
+  .wrap{width:100%; max-width:1080px; margin:0 auto; padding:48px 20px 32px; flex:1}
+  header{text-align:center; margin-bottom:44px}
+  .tag{
+    display:inline-block; font-size:.78rem; font-weight:700; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--roxo); background:var(--amarelo);
+    padding:7px 16px; border-radius:999px;
+  }
+  h1{
+    font-size:clamp(2rem,6vw,3.4rem); font-weight:900; line-height:1.08;
+    margin:20px 0 14px; letter-spacing:-.02em;
+  }
+  h1 em{font-style:normal; color:var(--amarelo)}
+  .sub{
+    margin:0 auto; max-width:52ch; font-size:1.05rem; font-weight:500;
+    line-height:1.6; color:rgba(255,253,245,.82);
+  }
+  .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:22px}
+  .card{
+    display:flex; flex-direction:column; text-decoration:none; color:inherit;
+    background:rgba(255,253,245,.06); border:2px solid rgba(255,253,245,.16);
+    border-radius:20px; padding:28px 26px 26px; position:relative; overflow:hidden;
+    transition:transform .18s ease, border-color .18s ease, background .18s ease;
+  }
+  .card::before{
+    content:""; position:absolute; inset:0 0 auto 0; height:6px; background:var(--cor);
+  }
+  .card:hover,.card:focus-visible{
+    transform:translateY(-6px); background:rgba(255,253,245,.11);
+    border-color:var(--cor); outline:none;
+  }
+  .card:focus-visible{box-shadow:0 0 0 4px rgba(255,220,116,.55)}
+  .icone{font-size:2.4rem; line-height:1; margin-bottom:16px}
+  .card h2{font-size:1.35rem; font-weight:800; margin:0 0 4px; letter-spacing:-.01em}
+  .kicker{
+    font-size:.72rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase;
+    color:var(--cor); margin-bottom:14px;
+  }
+  .card p{margin:0 0 22px; font-size:.95rem; line-height:1.6; color:rgba(255,253,245,.78); flex:1}
+  .jogar{
+    align-self:flex-start; font-weight:800; font-size:.9rem; letter-spacing:.02em;
+    background:var(--cor); color:var(--creme); padding:11px 22px; border-radius:999px;
+  }
+  .card:nth-child(1){--cor:var(--magenta)}
+  .card:nth-child(2){--cor:var(--laranja)}
+  .card:nth-child(3){--cor:var(--verde)}
+  .card:nth-child(2) .jogar{color:var(--roxo)}
+  footer{
+    text-align:center; padding:28px 20px 36px; font-size:.85rem; font-weight:500;
+    color:rgba(255,253,245,.55);
+  }
+  @media (prefers-reduced-motion:reduce){.card{transition:none} .card:hover{transform:none}}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <span class="tag">Projeto Fluência Digital</span>
+      <h1>Três jogos sobre<br><em>viver bem na internet</em></h1>
+      <p class="sub">Atividades pedagógicas para reconhecer boatos, identificar golpes e escolher atitudes seguras no dia a dia digital. Funcionam no computador, no tablet e no celular.</p>
+    </header>
+
+    <main class="grid">
+      <a class="card" href="detetives/">
+        <div class="icone">🔍</div>
+        <div class="kicker">Investigação</div>
+        <h2>Detetives Digitais</h2>
+        <p>Seis mensagens chegaram esta semana. Umas são verdade, outras não. Arraste as pistas, preencha a prancheta e feche o relatório sobre os boatos de Serra Azul.</p>
+        <span class="jogar">Jogar →</span>
+      </a>
+
+      <a class="card" href="golpes/">
+        <div class="icone">📱</div>
+        <div class="kicker">Cidadania digital</div>
+        <h2>Golpes Cibernéticos</h2>
+        <p>Leia as notificações com calma e decida. Pressa, prêmio, ameaça ou pedido de dados merecem atenção — aprenda a observar os sinais antes de tocar em qualquer link.</p>
+        <span class="jogar">Jogar →</span>
+      </a>
+
+      <a class="card" href="ninja/">
+        <div class="icone">⚔️</div>
+        <div class="kicker">Reflexo e atenção</div>
+        <h2>Segurança Ninja</h2>
+        <p>Corte apenas as frases que mostram atitudes seguras na internet. Se a frase representa um risco, deixe passar. Tem modo de leitura lenta para quem precisa de mais tempo.</p>
+        <span class="jogar">Jogar →</span>
+      </a>
+    </main>
+  </div>
+
+  <footer>Projeto Fluência Digital · atividades de educação para a cidadania digital</footer>
+</body>
+</html>
