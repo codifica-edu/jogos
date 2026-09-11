@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Jogos — Fluência Digital</title>
-<meta name="description" content="Três jogos de fluência digital: investigação de boatos, identificação de golpes e atitudes seguras na internet.">
+<meta name="description" content="Jogos de fluência digital: investigação de boatos, golpes, atitudes seguras, cyberbullying, privacidade, vocabulário e cidadania digital.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&display=swap" rel="stylesheet">
@@ -65,10 +65,10 @@
     align-self:flex-start; font-weight:800; font-size:.9rem; letter-spacing:.02em;
     background:var(--cor); color:var(--creme); padding:11px 22px; border-radius:999px;
   }
-  .card:nth-child(1){--cor:var(--magenta)}
-  .card:nth-child(2){--cor:var(--laranja)}
-  .card:nth-child(3){--cor:var(--verde)}
-  .card:nth-child(2) .jogar{color:var(--roxo)}
+  .card:nth-child(3n+1){--cor:var(--magenta)}
+  .card:nth-child(3n+2){--cor:var(--laranja)}
+  .card:nth-child(3n+3){--cor:var(--verde)}
+  .card:nth-child(3n+2) .jogar{color:var(--roxo)}
   footer{
     text-align:center; padding:28px 20px 36px; font-size:.85rem; font-weight:500;
     color:rgba(255,253,245,.55);
@@ -80,8 +80,8 @@
   <div class="wrap">
     <header>
       <span class="tag">Projeto Fluência Digital</span>
-      <h1>Três jogos sobre<br><em>viver bem na internet</em></h1>
-      <p class="sub">Atividades pedagógicas para reconhecer boatos, identificar golpes e escolher atitudes seguras no dia a dia digital. Funcionam no computador, no tablet e no celular.</p>
+      <h1>Jogos sobre<br><em>viver bem na internet</em></h1>
+      <p class="sub">Atividades pedagógicas para reconhecer boatos, identificar golpes, escolher atitudes seguras e ampliar o vocabulário do dia a dia digital. Funcionam no computador, no tablet e no celular.</p>
     </header>
 
     <main class="grid">
@@ -106,6 +106,54 @@
         <div class="kicker">Reflexo e atenção</div>
         <h2>Segurança Ninja</h2>
         <p>Corte apenas as frases que mostram atitudes seguras na internet. Se a frase representa um risco, deixe passar. Tem modo de leitura lenta para quem precisa de mais tempo.</p>
+        <span class="jogar">Jogar →</span>
+      </a>
+
+      <a class="card" href="cidade/">
+        <div class="icone">👧</div>
+        <div class="kicker">Aventura</div>
+        <h2>Ana na Cidade Digital</h2>
+        <p>Explore a cidade em pixel art e ajude a Ana a resolver 20 micromissões sobre golpes, cyberbullying, privacidade e ECA Digital — com minigames no Lab dos Bugs.</p>
+        <span class="jogar">Jogar →</span>
+      </a>
+
+      <a class="card" href="dupla/">
+        <div class="icone">🤖</div>
+        <div class="kicker">Cooperativo · 2 jogadores</div>
+        <h2>Dupla Digital</h2>
+        <p>Dois robôs, uma missão: em 30 níveis de plataforma, a dupla analisa mensagens e notícias, isola vírus e trabalha em equipe para proteger a rede.</p>
+        <span class="jogar">Jogar →</span>
+      </a>
+
+      <a class="card" href="corrida/">
+        <div class="icone">🏃</div>
+        <div class="kicker">Corrida e decisão</div>
+        <h2>Corrida Digital</h2>
+        <p>Escolha o caminho mais seguro a cada trecho da pista. Boas escolhas fortalecem seu escudo digital; escolhas de risco deixam você mais vulnerável.</p>
+        <span class="jogar">Jogar →</span>
+      </a>
+
+      <a class="card" href="caca/">
+        <div class="icone">🔎</div>
+        <div class="kicker">Caça-palavras</div>
+        <h2>Caça Digital</h2>
+        <p>Encontre palavras escondidas na horizontal, na vertical ou na diagonal em 20 níveis temáticos sobre segurança, computação, privacidade e cidadania digital.</p>
+        <span class="jogar">Jogar →</span>
+      </a>
+
+      <a class="card" href="palavra/">
+        <div class="icone">🧠</div>
+        <div class="kicker">Desafio de palavras</div>
+        <h2>Palavra Digital</h2>
+        <p>Descubra a palavra do vocabulário digital em até seis tentativas. As cores mostram quais letras estão no lugar certo, em outro lugar ou fora da palavra.</p>
+        <span class="jogar">Jogar →</span>
+      </a>
+
+      <a class="card" href="historias/">
+        <div class="icone">⌨️</div>
+        <div class="kicker">Digitação e leitura</div>
+        <h2>Histórias Digitais</h2>
+        <p>Digite dez histórias sobre cultura digital, ECA Digital e respeito online. Acompanhe os personagens, responda às missões de compreensão e treine sua escrita.</p>
         <span class="jogar">Jogar →</span>
       </a>
     </main>
